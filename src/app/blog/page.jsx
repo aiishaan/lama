@@ -1,9 +1,8 @@
-const { exportTraceState } = require("next/dist/trace")
 
-function Blog () {
+function BlogPage () {
     return (
-        <div>Blog</div>
+        <div>BlogPage</div>
     )
 }
 
-export default Blog
+export default BlogPage
