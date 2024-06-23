@@ -1,6 +1,10 @@
 function Footer () {
     return (
-        <div>Footer</div>
+        <div className={styles.container}>
+            <div className={styles.logo}></div>
+            <div className={styles.text}>
+            </div>
+        </div>
     )
 }
 

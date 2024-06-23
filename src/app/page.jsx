@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className={styles.container}>
      <div className={styles.textContainer}>
-      <h1>Creative Thoughts Agency.</h1>
-      <p>bla bla bla, for now random text for this, bla bla bla</p>
+      <h1 className={styles.title}>Creative Thoughts Agency.</h1>
+      <p  className={styles.desc}>bla bla bla, for now random text for this, bla bla bla</p>
       <div className={styles.buttons}>
         <button className={styles.button}>Learn More</button>
         <button className={styles.button}>Contact</button>
