@@ -5,11 +5,15 @@ function ContactPage () {
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>
-                <Image src='/contact.png' alt='' fill/>
+                <Image className={styles.img} src='/contact.png' alt='' fill/>
             </div>
             <div className={styles.formContainer}>
                 <form action="" className={styles.form}>
-                    <input type="text" placeholdername="" id="" />
+                    <input type="text" placeholder='Name and Surname'/>
+                    <input type="text" placeholder='Email Address'/>
+                    <input type="text" placeholder='Phone Number (Optional)'/>
+                    <textarea placeholder='Message' cols='30' rows="10"></textarea>
+                    <button>Send</button>
                 </form>
             </div>
         </div>
