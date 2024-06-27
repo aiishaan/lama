@@ -32,7 +32,6 @@ async function SinglePostPage ({params}) {
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>{post?.title}</h1>
                 <div className={styles.detail}>
-                <Image className={styles.avatar} src="/about.png" alt="" width={50} height={50}/>
                {post && ( <Suspense fallback={<div>Loading... </div>}>
                     <PostUser userId = {post.userId} />
                 </Suspense>)}
