@@ -26,9 +26,9 @@ async function SinglePostPage ({params}) {
 
     return (
         <div className={styles.container}>
-            <div className={styles.imgContainer}>
-                <Image className={styles.img} src="/about.png" alt="" fill/>
-            </div>
+           {post.img && <div className={styles.imgContainer}>
+                <Image className={styles.img} src={post.img} alt="" fill/>
+            </div>}
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>{post?.title}</h1>
                 <div className={styles.detail}>
@@ -38,11 +38,11 @@ async function SinglePostPage ({params}) {
                 </Suspense>)}
                 <div className={styles.detailText}>
                     <span className={styles.detailTitle}>Published</span>
-                    <span className={styles.detailValue}>25.06.2024</span>
+                    <span className={styles.detailValue}>{post.createdAt.toString().slice(4,16)}</span>
                 </div>
                 </div>
                 <div className={styles.content}>
-                    {post.body}
+                    {post.desc}
                 </div>
             </div>
         </div>
