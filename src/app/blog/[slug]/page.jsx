@@ -3,21 +3,22 @@ import styles from "./singlePost.module.css"
 import PostUser from "@/components/postUser/postUser"
 import { Suspense } from "react"
 
-const getData = async (slug) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
+//Fetch data with an api
+// const getData = async (slug) => {
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
     
-    if(!res.ok){
-        throw new Error(" OOPS!, Something went wrong")
-    }
+//     if(!res.ok){
+//         throw new Error(" OOPS!, Something went wrong")
+//     }
 
-    return res.json()
-}
+//     return res.json()
+// }
 
 async function SinglePostPage ({params}) {
 
     const {slug} = params;
 
-    const post = await getData(slug)
+    // const post = await getData(slug)
 
     return (
         <div className={styles.container}>
