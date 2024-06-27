@@ -1,5 +1,6 @@
 import PostCard from '@/components/postCard/postCard'
 import styles from './blog.module.css'
+import { getPosts } from '@/lib/data'
 
 //Fetch data with an api
 // const getData = async () => {
@@ -15,6 +16,9 @@ import styles from './blog.module.css'
 async function BlogPage () {
 
     // const posts = await getData();
+
+    //fetching data locally
+    const posts = await getPosts();
 
     return (
         <div className={styles.container}>
