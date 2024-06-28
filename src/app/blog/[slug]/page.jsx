@@ -5,24 +5,24 @@ import { Suspense } from "react"
 import { getPost } from "@/lib/data";
 
 //Fetch data with an api
-// const getData = async (slug) => {
-//     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
+const getData = async (slug) => {
+    const res = await fetch(`http://localhost:3000/api/blog/${slug}`)
     
-//     if(!res.ok){
-//         throw new Error(" OOPS!, Something went wrong")
-//     }
+    if(!res.ok){
+        throw new Error(" OOPS!, Something went wrong")
+    }
 
-//     return res.json()
-// }
+    return res.json()
+}
 
 async function SinglePostPage ({params}) {
 
     const {slug} = params;
 
-    // const post = await getData(slug)
+    const post = await getData(slug)
 
     //fetching data locally
-    const post = await getPost(slug)
+    // const post = await getPost(slug)
 
     return (
         <div className={styles.container}>
