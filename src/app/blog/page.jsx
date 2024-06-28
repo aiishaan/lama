@@ -13,6 +13,12 @@ import { getPosts } from '@/lib/data'
 //     return res.json()
 // }
 
+export const metadata = {
+    title: "Lama web app blog page",
+    description: "practicing nextjs concepts for now, this is the blog page desc",
+  };
+
+
 async function BlogPage () {
 
     // const posts = await getData();
