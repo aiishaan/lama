@@ -4,10 +4,10 @@ import Image from 'next/image'
 import styles from './contact.module.css'
 import { useEffect, useState } from 'react'
 
-export const metadata = {
-    title: "Lama web app contact page",
-    description: "practicing nextjs concepts for now, this is the contact page desc",
-  };
+// export const metadata = {
+//     title: "Lama web app contact page",
+//     description: "practicing nextjs concepts for now, this is the contact page desc",
+//   };
 
 function ContactPage () {
 
