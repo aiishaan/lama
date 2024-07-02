@@ -13,9 +13,9 @@ export const { handlers:{GET, POST}, auth, signIn, signOut } = NextAuth({ provid
                 const user = await User.findOne({email: profile.email});
                 if(!user){
                     const newUser = new User({
-                        username: profile.name,
+                        username: profile.login,
                         email : profile.email,
-                        image : profile.image,
+                        image : profile.avatar_url,
                     });
 
                     await newUser.save();
