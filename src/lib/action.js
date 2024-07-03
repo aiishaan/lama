@@ -53,15 +53,17 @@ export const handleLogout = async () => {
 
 export const register = async (formData) => {
     const {username, email, password, img, passwordRepeat} = Object.fromEntries(formData);
+    console.log(passwordRepeat)
+    console.log(formData)
 
     if(password !== passwordRepeat){
-        return "Password do not match"
+        return {error: "Password do not match"}
     }
 
     try {
 
         connectToDb();
-        const user = User.findOne({username});
+        const user = await User.findOne({username});
         if(user){
             return "Username already exists";
         }

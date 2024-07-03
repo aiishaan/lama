@@ -9,7 +9,7 @@ function RegisterPage() {
                 <input type="text" placeholder="username" name="username" />
                 <input type="email" placeholder="email" name="email" />
                 <input type="password" placeholder="password" name="password" />
-                <input type="password" placeholder="retype password" name="passwordrepeat" />
+                <input type="password" placeholder="retype password" name="passwordRepeat" />
                 <button>Register</button>
             </form>
             </div>
