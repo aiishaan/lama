@@ -1,3 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 500px;
+    background-color: var(--bgSoft);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+
 .form {
     display: flex;
     flex-direction: column;
@@ -7,7 +25,7 @@
 
 .form input {
     padding: 20px;
-    border-color: var(--bg);
+    background-color: var(--bg);
     color: var(--textColor);
     border: none;
     border-radius: 5px;
